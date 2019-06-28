@@ -1,1 +1,26 @@
-# Add your code here
+class Dog
+
+    @@all = []
+
+    def initialize
+        @@all << self
+    end
+
+    def self.all
+        @@all
+    end
+
+    def self.print_all
+        @@all.each do |x|
+            puts x
+        end
+    end
+
+    def self.clear_all
+        @@all.clear
+    end
+
+
+
+
+end
